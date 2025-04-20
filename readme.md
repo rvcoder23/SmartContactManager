@@ -2,8 +2,6 @@
 
 A modern, feature-rich contact management application built with Spring Boot and modern web technologies.
 
-![SCM2.0](https://via.placeholder.com/800x400?text=SCM2.0+Screenshot)
-
 ## Features
 
 - **User Authentication**
@@ -98,17 +96,19 @@ A modern, feature-rich contact management application built with Spring Boot and
 
 ## Screenshots
 
+Below are screenshots of the Smart Contact Manager application:
+
 ### Home Page
-![Home Page](https://via.placeholder.com/600x300?text=Home+Page)
+The landing page of the application with features overview.
 
 ### Login Page
-![Login Page](https://via.placeholder.com/600x300?text=Login+Page)
+User authentication with email/password and social login options (Google, GitHub).
 
 ### Contact List
-![Contact List](https://via.placeholder.com/600x300?text=Contact+List)
+View and manage all your contacts with search and filtering capabilities.
 
 ### User Profile
-![User Profile](https://via.placeholder.com/600x300?text=User+Profile)
+User profile management with account settings and preferences.
 
 ## Team
 
