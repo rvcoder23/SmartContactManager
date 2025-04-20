@@ -101,14 +101,22 @@ Below are screenshots of the Smart Contact Manager application:
 ### Home Page
 The landing page of the application with features overview.
 
+![Home Page](docs/screenshots/home-page.png)
+
 ### Login Page
 User authentication with email/password and social login options (Google, GitHub).
+
+![Login Page](docs/screenshots/login-page.png)
 
 ### Contact List
 View and manage all your contacts with search and filtering capabilities.
 
+![Contact List](docs/screenshots/contact-list.png)
+
 ### User Profile
 User profile management with account settings and preferences.
+
+![User Profile](docs/screenshots/user-profile.png)
 
 ## Team
 
