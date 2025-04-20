@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base :: parent(~{::#content},~{::title},~{::script})}">
+
+<head>
+  <title>About Page</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+
+<body class="h-screen bg-gray-100 dark:bg-gray-900 overflow-hidden">
+  <div id="content" class="container mx-auto p-4 pt-6 md:p-6 lg:p-12">
+    <header class="flex justify-between mb-4">
+      <nav class="flex justify-between w-full">
+        <a class="text-lg font-bold text-gray-800 dark:text-white" th:href="@{/}">Smart Contact Manager</a>
+      </nav>
+    </header>
+    <main class="flex flex-col justify-center h-full">
+      <section class="bg-white dark:bg-gray-800 p-4 rounded shadow-md animate-fade-in-down">
+        <h1 class="text-3xl font-bold text-gray-800 dark:text-white">About Smart Contact Manager</h1>
+        <p class="text-lg text-gray-600 dark:text-gray-400">Smart Contact Manager is a powerful tool for managing your
+          contacts with ease. With its intuitive interface and advanced features, you can easily organize, search, and
+          connect with your contacts.</p>
+      </section>
+      <section class="bg-white dark:bg-gray-800 p-4 rounded shadow-md mt-4 animate-fade-in-up">
+        <h2 class="text-2xl font-bold text-gray-800 dark:text-white">Our Mission</h2>
+        <p class="text-lg text-gray-600 dark:text-gray-400">Our mission is to provide a simple, yet powerful contact
+          management solution that helps individuals and businesses build stronger relationships and achieve their
+          goals.</p>
+      </section>
+      <section class="bg-white dark:bg-gray-800 p-4 rounded shadow-md mt-4 animate-fade-in-up">
+        <h2 class="text-2xl font-bold text-gray-800 dark:text-white">Our Team</h2>
+        <ul class="list-none mb-0">
+          <li class="text-lg text-gray-600 dark:text-gray-400 animate-slide-in-left">Rohit verma,Project Manager and
+            Developer </li>
+          <li class="text-lg text-gray-600 dark:text-gray-400 animate-slide-in-left delay-100">Manish kumar,
+            Documentation and Designer</li>
+          <!-- <li class="text-lg text-gray-600 dark:text-gray-400 animate-slide-in-left delay-200">Bob Johnson, Designer
+          </li> -->
+        </ul>
+      </section>
+    </main>
+  </div>
+  <script th:src="@{/js/script.js}"></script>
+</body>
+
+</html>

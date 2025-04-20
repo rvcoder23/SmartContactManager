@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base :: parent(~{::#content},~{::title},~{::script})}">
+
+<head>
+  <title>Smart Contact Manager</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+
+<body class="h-screen bg-gray-100 dark:bg-gray-900 overflow-hidden">
+  <div id="content" class="container mx-auto p-4 pt-6 md:p-6 lg:p-12">
+    <header class="flex justify-between mb-4">
+      <nav class="flex justify-between w-full">
+        <a class="text-lg font-bold text-gray-800 dark:text-white" th:href="@{/}">Smart Contact Manager</a>
+      </nav>
+    </header>
+    <main class="flex flex-col justify-center h-full">
+      <section class="bg-white dark:bg-gray-800 p-4 rounded shadow-md animate-fade-in-down">
+        <h1 class="text-3xl font-bold text-gray-800 dark:text-white">Welcome to Smart Contact Manager</h1>
+        <p class="text-lg text-gray-600 dark:text-gray-400">Manage your contacts with ease</p>
+      </section>
+      <section class="bg-white dark:bg-gray-800 p-4 rounded shadow-md mt-4 animate-fade-in-up">
+        <h2 class="text-2xl font-bold text-gray-800 dark:text-white">Features</h2>
+        <ul class="list-none mb-0">
+          <li class="text-lg text-gray-600 dark:text-gray-400 animate-slide-in-left">Easy contact management</li>
+          <li class="text-lg text-gray-600 dark:text-gray-400 animate-slide-in-left delay-100">Search and filter
+            contacts</li>
+          <li class="text-lg text-gray-600 dark:text-gray-400 animate-slide-in-left delay-200">Import and export
+            contacts</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+  <script th:src="@{/js/script.js}"></script>
+</body>
+
+</html>

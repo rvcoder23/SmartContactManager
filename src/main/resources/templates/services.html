@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base :: parent(~{::#content},~{::title},~{})}">
+
+<head>
+  <title>Services</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+
+<body class="h-screen bg-gray-100 dark:bg-gray-900 overflow-hidden">
+  <div id="content" class="container mx-auto p-4 pt-6 md:p-6 lg:p-12">
+    <header class="flex justify-between mb-4">
+      <nav class="flex justify-between w-full">
+        <a class="text-lg font-bold text-gray-800 dark:text-white" th:href="@{/}">Smart Contact Manager</a>
+      </nav>
+    </header>
+    <main class="flex flex-col justify-center h-full">
+      <section class="bg-white dark:bg-gray-800 p-4 rounded shadow-md animate-fade-in-down">
+        <h1 class="text-3xl font-bold text-gray-800 dark:text-white">Our Services</h1>
+        <p class="text-lg text-gray-600 dark:text-gray-400">At Smart Contact Manager, we offer a range of services
+          designed to help you manage your contacts effectively and grow your business.</p>
+      </section>
+      <section class="bg-white dark:bg-gray-800 p-4 rounded shadow-md mt-4 animate-fade-in-up">
+        <h2 class="text-2xl font-bold text-gray-800 dark:text-white">Contact Management</h2>
+        <p class="text-lg text-gray-600 dark:text-gray-400">Our contact management service allows you to store,
+          organize, and manage your contacts in one place. With our intuitive interface, you can easily add, edit, and
+          delete contacts, as well as import and export them from other sources.</p>
+      </section>
+      <section class="bg-white dark:bg-gray-800 p-4 rounded shadow-md mt-4 animate-fade-in-up">
+        <h2 class="text-2xl font-bold text-gray-800 dark:text-white">Contact Segmentation</h2>
+        <p class="text-lg text-gray-600 dark:text-gray-400">Our contact segmentation service allows you to categorize
+          your contacts based on various criteria, such as location, industry, or job title. This helps you to target
+          specific groups of contacts with tailored messages and campaigns.</p>
+      </section>
+      <section class="bg-white dark:bg-gray-800 p-4 rounded shadow-md mt-4 animate-fade-in-up">
+        <h2 class="text-2xl font-bold text-gray-800 dark:text-white">Contact Analytics</h2>
+        <p class="text-lg text-gray-600 dark:text-gray-400">Our contact analytics service provides you with insights
+          into your contacts' behavior and preferences. With our analytics tools, you can track email opens, clicks, and
+          conversions, as well as measure the effectiveness of your campaigns.</p>
+      </section>
+    </main>
+  </div>
+  <script th:src="@{/js/script.js}"></script>
+</body>
+
+</html>

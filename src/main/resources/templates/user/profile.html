@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base :: parent(~{::#content},~{::title},~{::script})}">
+
+<head>
+  <title data-th-text="${loggedInUser.name}+' |  SCM'">Profile Page</title>
+</head>
+
+<body>
+  <div id="content">
+    <!-- sidebar -->
+
+    <!-- user is logged in : sidebar -->
+
+    <div th:if="${loggedInUser}">
+      <div data-th-replace="~{user/sidebar :: sidebar}"></div>
+    </div>
+
+    <div class="sm:pl-64 pt-20" style="height: 1000px">
+      <!-- Profile Card -->
+      <div class="max-w-sm mx-auto bg-white dark:bg-gray-900 rounded-lg shadow-md overflow-hidden">
+        <!-- Profile Picture -->
+        <div class="relative">
+          <img class="w-full h-48 object-cover"
+            src="data:image/jpeg;base64,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"
+            alt="Profile Background">
+          <div class="absolute inset-0 flex items-center justify-center">
+            <img data-th-src="@{${loggedInUser.profilePic}}" class="w-24 h-24 rounded-full border-4 border-white"
+              src="/images/th.jpeg" alt="Profile Picture">
+          </div>
+        </div>
+
+        <!-- Profile Information -->
+        <div class="pt-24 pb-6 px-6 text-center">
+          <h2 class="text-2xl font-semibold text-gray-800" data-th-text="${loggedInUser.name}">John Doe</h2>
+          <p class="text-gray-600 mt-1" data-th-text="${loggedInUser.phoneNumber}">johndoe@example.com</p>
+          <p class="text-gray-600 mt-1" data-th-text="${loggedInUser.email}">(123) 456-7890</p>
+          <p class="text-gray-500 mt-4 text-sm" data-th-text="${loggedInUser.about}">Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <!-- Additional Information -->
+        <div class="px-6 py-4 border-t border-gray-200">
+
+          <div class="flex items-center justify-between mt-2">
+            <span class="text-gray-600">Email Verified:</span>
+            <span class="font-medium text-gray-800" data-th-text="${loggedInUser.emailVerified?'YES':'NO'}">No</span>
+          </div>
+          <div class="flex items-center justify-between mt-2">
+            <span class="text-gray-600">Phone Verified:</span>
+            <span class="font-medium text-gray-800" data-th-text="${loggedInUser.phoneVerified?'YES':'NO'}">No</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    console.log("this is profile page");
+  </script>
+</body>
+
+</html>
